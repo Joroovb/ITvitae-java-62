@@ -12,6 +12,10 @@ public class Main {
         dag += week * 7;
         uur += dag * 24;
         minuten += uur * 60;
+        double d = 0.1;
+        double dd = 0.2;
+
+        System.out.println(d + dd);
 
         System.out.println(uur * 60);
 
