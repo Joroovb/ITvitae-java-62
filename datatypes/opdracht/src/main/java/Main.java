@@ -10,15 +10,15 @@ public class Main {
         for (int i = 1; i <= num; i++) {
 
            if (i % 2 == 0) {
-               uneven += i;
-           } else {
                even += i;
+           } else {
+               uneven += i;
            }
 
         }
 
         System.out.println(even);
         System.out.println(uneven);
-        System.out.println(even - uneven);
+        System.out.println(uneven - even);
     }
 }
