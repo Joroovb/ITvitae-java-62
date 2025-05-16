@@ -6,18 +6,26 @@ public class Car {
     private int year;
     private Engine engine;
 
-    public Car(String make, String model, int year, Engine engine) {
-        this.make = make;
-        this.model = model;
-        this.year = year;
-        this.engine = engine;
-    }
+    // default values
+    // referentie types -> null
+    // primitieve ->
+        // int -> 0
+        // float -> 0.0
+        // double -> 0.0
+        // boolean -> false
 
     public Car() {
         this.make = "";
         this.model = "";
         this.year = -1;
         this.engine = new Engine();
+    }
+
+    public Car(String make, String model, int year, Engine engine) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.engine = engine;
     }
 
     public String getMake() {
@@ -50,18 +58,17 @@ public class Car {
 
     public void setEngine(Engine engine) {
         if (engine.getHorsePower() > 50) {
-            System.out.println("This car is very fast, be careful!");
+            System.out.println("Watch out, this is a fast car!");
         }
         this.engine = engine;
     }
 
     @Override
     public String toString() {
-        return "Car{" +
-                "make='" + make + '\'' +
-                ", model='" + model + '\'' +
-                ", year=" + year +
-                ", engine=" + engine +
-                '}';
+        return "Car:" +
+                "\n\tmake='" + make + '\'' +
+                ",\n\tmodel ='" + model + '\'' +
+                ",\n\tyear=" + year +
+                ",\n\tengine=" + engine;
     }
 }

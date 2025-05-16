@@ -2,6 +2,7 @@ package opdracht;
 
 public class Engine {
     private int horsePower;
+    // access-modifier datatype identifier
     private EngineType type;
 
     public Engine() {
@@ -36,9 +37,8 @@ public class Engine {
 
     @Override
     public String toString() {
-        return "Engine{" +
-                "horsePower=" + horsePower +
-                ", type=" + type +
-                '}';
+        return "Engine:" +
+                "\n\thorsePower=" + horsePower +
+                ",\n\ttype=" + type;
     }
 }
