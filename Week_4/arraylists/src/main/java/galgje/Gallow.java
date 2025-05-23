@@ -54,6 +54,6 @@ public class Gallow {
     };
 
     public static String forStage(int stage) {
-        return STAGES[stage];
+        return STAGES[STAGES.length - stage - 1];
     }
 }
